@@ -1,0 +1,28 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version":3,
+	"name": "F6.gs书签收藏",
+	"version": "1.0.24",
+	"description": "个性私人定制书签收藏管理。",
+	"permissions": [
+		"contextMenus",
+		"tabs",
+		"storage"
+	],
+	"homepage_url": "https://www.F6.gs/",
+	"icons": { "16": "static/images/f6gs_icon_16.png",
+	           "48": "static/images/f6gs_icon_48.png",
+	          "128": "static/images/f6gs_icon_128.png" },
+	"action":{
+		"default_icon": "static/images/f6s_icon.png",
+		"default_title": "F6.gs书签收藏",
+		"default_popup": "index.html"
+	},
+	"background":
+	{
+		"service_worker": "background.js"
+		
+	} 
+	}
+ 
