@@ -1,0 +1,28 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version":3,
+	"name": "Kim.gs书签收藏",
+	"version": "1.0.24",
+	"description": "个性私人定制书签收藏管理。",
+	"permissions": [
+		"contextMenus",
+		"tabs",
+		"storage"
+	],
+	"homepage_url": "https://www.kim.gs/",
+	"icons": { "16": "static/images/kimgs_icon_16.png",
+	           "48": "static/images/kimgs_icon_48.png",
+	          "128": "static/images/kimgs_icon_128.png" },
+	"action":{
+		"default_icon": "static/images/kimgs_icon.png",
+		"default_title": "Kim.gs书签收藏",
+		"default_popup": "index.html"
+	},
+	"background":
+	{
+		"service_worker": "background.js"
+		
+	} 
+	}
+ 
